@@ -2,7 +2,7 @@ Principal
 	1-git inint --- trnasforma o diretorio em um repositorio no git
 	2-git add . ou arquivo --- adiciona os arquivos do depositorio para o git
 	3-git commit -m "ue" --- coloca os arquivos para o repositorio
-	2/3- git commit -am "ue" --- forma masi rapida de commitar, mas não funciona se não for usado git add pelo manos uma vez no arquivo
+	2/3- git commit -am "ue" --- forma mais rapida de commitar, mas não funciona se não for usado git add pelo manos uma vez no arquivo
 	4-git remote add origin https://github.com/TheDarkzinho/tcc-go --- define onde será(GITHUB) enviado os arquivos(nome da 'variavel' e origin)
 	5-git push origin master --- manda os arquivos já comitados para o github(no caso no repositorio do origin e branch master)
 
@@ -18,5 +18,9 @@ branches
 
 Na duvida? use:
 git log --- historico de mudanças no diretorio
+	para sair aperte a tecla q
 git status --- mostra arquivos que ainda não foram add ou commitados
 code . --- abre o git com o diretorio
+
+Avisos
+Cuidado ao mudar de branches os arquivo presente em seu computador volta a ser os presente no repositorio
