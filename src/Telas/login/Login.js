@@ -1,23 +1,22 @@
 import {useState} from 'react';
-// import { Switch, Route, Link } from 'react-router-dom';
-import {Route, Routes, Redirect} from 'react-router-dom';
-import logo from './assets/logo.svg';
-import person from './assets/person1.svg';
-import olho1 from './assets/olho1.svg';
-import olho2 from './assets/olho2.svg';
-import './styles.css';
-import conta from './conta.js';
+import React from 'react';
+import logo from '../../assets/logo.svg';
+import person from '../../assets/person1.svg'
+import olho1 from '../../assets/olho1.svg';
+import olho2 from '../../assets/olho2.svg';
+import './login.css';
+import { Link } from 'react-router-dom';
 
 
 
-function App() {
+function Login() {
   const[user, setUser] = useState('')
   const[password, setPassoword] = useState('')
   const senha = document.getElementById("password")
   const icone = document.getElementById("olho")
 
   function verSenha() {
-   let inputTypePassword = senha.type == "password"
+   let inputTypePassword = senha.type === "password"
    
    if (inputTypePassword){
       senha.setAttribute("type","text")
@@ -49,9 +48,9 @@ function App() {
               onChange={e => setUser(e.target.value)}/>
               <span className="focus-input" data-placeholder="Usuário"></span>
 
-                          <div className="icon">
-                            <img src={person}/>   {/*icone do carinha do email*/}
-                          </div>
+              <div className="icon">
+                <img src={person}/>
+              </div>
             </div>
 
             <div className="estilo-input">
@@ -70,20 +69,13 @@ function App() {
             </div>
 
             <div className="fundo-btn">
-              <button action="./conta.js"className="login-btn">LOGIN</button>
+              <Link to="/Home" className="login-btn">LOGIN</Link>
             </div>
 
             <div className="text-center">
               <span className="txt1">Esqueceu a senha?</span>
               <a className="txt2" href="">Recuperar senha</a>
             </div>
-
-            <main>
-            <Routes>  
-              <Route path='/conta' element={<conta/>} />
-            </Routes>  
-            </main>
-
           </form>
         </div>        
       </div>
@@ -92,4 +84,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;

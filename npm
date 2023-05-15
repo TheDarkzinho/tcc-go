@@ -1,0 +1,3 @@
+live sass compile
+    ctrl+shift+p
+        live sass: watch sass

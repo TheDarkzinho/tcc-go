@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .tela{
@@ -49,6 +50,7 @@
 
 .login-form-title img{
     width: 90px;       /* titulo em cima do logo */
+    margin-bottom: 20px;
 }
 
 .estilo-input{
@@ -90,7 +92,6 @@
     
 }
 .focus-input{
-    font-family: raleway;
     font-weight: bold;
     position: absolute;
     display: block;
@@ -113,9 +114,9 @@
     width: 0;
     height: 0; 
 
-    -webkit-transition: all 0.4s;
+    /* -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
+    -moz-transition: all 0.4s; */
 }
 
 .focus-input::after{
@@ -133,9 +134,9 @@
 
     padding-left: 5px; 
 
-    -webkit-transition: all 0.4s;
+    /* -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
-    -moz-transition: all 0.4s; 
+    -moz-transition: all 0.4s;  */
 }
 
 .input:focus{
@@ -162,12 +163,12 @@
 }
 
 .login-btn{
-    font-family: raleway;
     font-weight: bold;
     font-size: 15px;
     border: none;
     border-radius: 10px;
     color: #fff;
+    text-decoration: none;
 
     line-height: 1.2;
 

@@ -1,0 +1,27 @@
+$cor-1:yellow;
+$cor-2:orangered;
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+@mixin cor-e-texto($cor-fundo, $cor-letras){
+    width: 50%;
+    background-color: $cor-fundo;
+    .texto{
+        margin-top:40%;
+        text-align: center;
+        font-size: 150px;
+        color: $cor-letras;
+        text-decoration: none;
+    }
+
+}
+
+.esquerdo{
+    @include cor-e-texto($cor-1,$cor-2);
+}
+.direito{
+    @include cor-e-texto($cor-2,$cor-1);
+}
