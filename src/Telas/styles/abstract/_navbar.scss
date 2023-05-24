@@ -1,0 +1,38 @@
+@import "../abstract/variaveis";
+@mixin btn_navg{
+    height: 30px;
+    width: 30px;
+   align-items: center;
+}
+// html{
+//     font-size: 10px;
+// }
+.nav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 3.75rem;
+    padding: 3rem 0 7.75rem 0;
+    // margin: 20xp 0 20px 0;
+    border-radius: 0 20px 20px 0 ;
+    background-color: $cor-das-tabelas;
+
+    justify-content: space-between;
+    align-items: center;
+
+   .logo{
+        // height: 50px;
+        width: 83%;
+        // margin: 0 5px 20px 5px;   
+        justify-content: center;  
+    }
+    
+    .btn_no_select{
+        @include btn_navg();
+        opacity: 0.5;
+    }
+    .btn_select{
+        @include btn_navg();
+        
+    }
+}

@@ -1,0 +1,12 @@
+@import "../abstract/variaveis";
+.name{
+    font-weight: bold;
+    margin: 1.25rem 0 0 1.5rem;
+    color: #FFFFFF;
+}
+
+.tasks{
+    height: 16.5rem;
+    width: 76.5rem;
+    background-color: $cor-das-tabelas;
+}

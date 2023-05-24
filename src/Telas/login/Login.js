@@ -1,9 +1,9 @@
 import {useState} from 'react';
 import React from 'react';
-import logo from '../../assets/logo.svg';
-import person from '../../assets/person1.svg'
-import olho1 from '../../assets/olho1.svg';
-import olho2 from '../../assets/olho2.svg';
+import logo from '../../img/logo.svg';
+import person from '../../img/person1.svg'
+import olho1 from '../../img/olho1.svg';
+import olho2 from '../../img/olho2.svg';
 import './login.css';
 import { Link } from 'react-router-dom';
 

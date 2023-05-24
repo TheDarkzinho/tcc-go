@@ -1,10 +1,28 @@
+@import "../styles/abstract/_home.scss";
+@import "../styles/abstract/_navbar.scss";
+@import "../styles/abstract/variaveis";
+@import "../styles/abstract/tela";
+
 $cor-1:yellow;
 $cor-2:orangered;
 
 .container{
     height: 100vh;
     display: flex;
+    background-color: $cor-de-fundo;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    a{
+        text-decoration: none;
+        display: flex;
+    }
+    
+}  
 
 @mixin cor-e-texto($cor-fundo, $cor-letras){
     width: 50%;
@@ -12,16 +30,17 @@ $cor-2:orangered;
     .texto{
         margin-top:40%;
         text-align: center;
-        font-size: 150px;
+        font-size: 10vmax;
         color: $cor-letras;
         text-decoration: none;
+        justify-content: center;      
     }
 
 }
 
 .esquerdo{
-    @include cor-e-texto($cor-1,$cor-2);
+    @include cor-e-texto($cor-de-fundo,$cor-primaria);
 }
 .direito{
-    @include cor-e-texto($cor-2,$cor-1);
+    @include cor-e-texto($cor-das-tabelas,$cor-primaria);
 }

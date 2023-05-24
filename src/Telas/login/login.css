@@ -1,9 +1,9 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
+} */
 
 .tela{
     width: 100%;
@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: 15px;
+    padding: 1rem;
 
     background-color: #1B1B1B;
 }
@@ -30,7 +30,7 @@
     border-radius: 10px;
 
     overflow: hidden;
-    padding: 77px 55px 33px 55px;
+    padding: 77px 45px 33px 45px;
 
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -114,9 +114,9 @@
     width: 0;
     height: 0; 
 
-    /* -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
-    -moz-transition: all 0.4s; */
+    -moz-transition: all 0.4s;
 }
 
 .focus-input::after{
@@ -134,9 +134,9 @@
 
     padding-left: 5px; 
 
-    /* -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;  */
+    -moz-transition: all 0.4s; 
 }
 
 .input:focus{
@@ -206,7 +206,7 @@
 
 .txt2{
     font-size: 14px;
-    color: #6a7dfe;
+    color: #4A62BD;
     line-height: 1.5;
     text-decoration: none;
 }
