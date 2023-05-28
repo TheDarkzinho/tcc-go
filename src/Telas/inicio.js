@@ -1,5 +1,4 @@
 import React from "react";
-// import './styles/styles.css'
 import { Link } from 'react-router-dom';
 
 export default function Inicio(){
@@ -8,10 +7,10 @@ export default function Inicio(){
         
         <div className="container">
             <div className="esquerdo">
-                <Link to="/" className="texto" >login</Link>    
+                <Link to="/" className="" >login</Link>    
             </div>
             <div className="direito">
-                <div className="texto">
+                <div className="">
                   Inicio
                 </div>
             </div>

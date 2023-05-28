@@ -1,12 +1,79 @@
 @import "../abstract/variaveis";
+.tela_home{
+    height:100vh;
+    width: 100vw;
+    padding: 1.25rem 0 1.25rem 0;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
 .name{
     font-weight: bold;
-    margin: 1.25rem 0 0 1.5rem;
+    margin:0 0 0 1.5rem;
     color: #FFFFFF;
+    align-self: flex-start;
 }
 
 .tasks{
-    height: 16.5rem;
-    width: 76.5rem;
+    height: 36.13%;
+    width: 95.66%;
+    border-radius: 20px;
+    padding: 1.18%  1.18% 0.79% 1.18%;
+    background-color: $cor-das-tabelas;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inner_tasks_btn{
+    width: 16rem;
+    height:fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.tasks_btn{
+    height: 1.75rem;
+    width: 7.5rem;
+    border-radius: 20px;
+
+    color: #FFFFFF;
+    background-color: #1B1E27;
+    font-weight: $semi-bold;
+
+}
+.inner_tasks_show{
+    height: 83%;
+    width: 100%;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.tasks_show{
+    height: 14.62%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #1B1E27;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_2{
+    height: 48.36%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    // margin: 0 1.5rem 1.5rem 1.5rem;
+}
+.calendario , .estoque{
+    border-radius: 20px;
+    width: 46.31%;
     background-color: $cor-das-tabelas;
 }
