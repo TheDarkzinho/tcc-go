@@ -25,12 +25,12 @@ export default function Home(){
 
             <div className="tasks">
                 <div className="inner_tasks_btn">
-                    <button className="tasks_btn">
+                    <div className="tasks_btn">
                         Tarefas
-                    </button>
-                    <button className="tasks_btn">
+                    </div>
+                    <div className="tasks_btn">
                        Avisos
-                    </button>
+                    </div>
                 </div>
                 <div className="inner_tasks_show">
                     <div className="tasks_show">nao sei como vai funcionar aqui dentro</div>
@@ -44,11 +44,22 @@ export default function Home(){
 
             <div className="container_2">
                 <div className="calendario">
-                    calendario
+                    <div className="calendario_btn">
+                        calendario
+                    </div>
+                    <div className="inner_calendario">
+                        <div className="calendario_show">dias</div>
+                        <div className="calendario_show">dias</div>
+                        <div className="calendario_show">dias</div>
+                        <div className="calendario_show">dias</div>
+                        <div className="calendario_show">dias</div>
+                    </div>
                 </div>
 
                 <div className="estoque">
+                   <div className="estoque_btn">
                     estoque
+                   </div>
                 </div>
             </div>
         </div>

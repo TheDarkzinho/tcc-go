@@ -1,4 +1,29 @@
 @import "../abstract/variaveis";
+
+@mixin primeiro{
+    height: 1.75rem;
+    width: 7.5rem;
+    border-radius: 20px;
+
+    color: #FFFFFF;
+    background-color: #1B1E27;
+    font-weight: $semi-bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin style_calendario_estoque{
+    border-radius: 20px;
+    width: 46.31%;
+    padding: $padding-das-telas;
+    background-color: $cor-das-tabelas;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .tela_home{
     height:100vh;
     width: 100vw;
@@ -10,7 +35,7 @@
     justify-content: space-between;
 }
 .name{
-    font-weight: bold;
+    font-weight: 800;
     margin:0 0 0 1.5rem;
     color: #FFFFFF;
     align-self: flex-start;
@@ -20,7 +45,7 @@
     height: 36.13%;
     width: 95.66%;
     border-radius: 20px;
-    padding: 1.18%  1.18% 0.79% 1.18%;
+    padding: $padding-das-telas;
     background-color: $cor-das-tabelas;
     
     display: flex;
@@ -34,19 +59,13 @@
     justify-content: space-between;
 }
 .tasks_btn{
-    height: 1.75rem;
-    width: 7.5rem;
-    border-radius: 20px;
-
-    color: #FFFFFF;
-    background-color: #1B1E27;
-    font-weight: $semi-bold;
-
+    @include primeiro;
 }
 .inner_tasks_show{
     height: 83%;
     width: 100%;
     color: #FFFFFF;
+    font-weight: $light;
 
     display: flex;
     flex-direction: column;
@@ -72,8 +91,53 @@
     
     // margin: 0 1.5rem 1.5rem 1.5rem;
 }
-.calendario , .estoque{
+.calendario{
+   @include style_calendario_estoque;
+   display: flex;
+   justify-content: space-between;
+}
+
+.calendario_btn{
+    @include primeiro; 
+}
+
+.inner_calendario{
+    height: 88%;
+    // background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    overflow:hidden;
+    overflow-x:scroll;
+    gap: 10px;
+    
+}
+.inner_calendario::-webkit-scrollbar{
+    height: 5px;
+    border-radius: 10px;
+}
+.inner_calendario::-webkit-scrollbar-thumb{
+    background-color:$cor-primaria;
+    border-radius: 10px;
+}
+
+
+.calendario_show{
+    min-width: 21.36%;
     border-radius: 20px;
-    width: 46.31%;
-    background-color: $cor-das-tabelas;
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+    background-color: #1B1E27;
+
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF
+}
+
+.estoque{
+    @include style_calendario_estoque;
+    display: flex;
+//    justify-content: space-between;
+}
+
+.estoque_btn{
+    @include primeiro; 
 }
