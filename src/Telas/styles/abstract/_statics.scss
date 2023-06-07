@@ -1,0 +1,20 @@
+.tela_statics{
+    @include tela_all;
+    flex-direction: row;
+    // align-content: center;
+    justify-content: space-around;
+}
+
+.dados_produtos{
+    @include style_itens(62.94%,96.57%);
+}
+.container_statics{
+    display: flex;
+    flex-direction: column;
+    height: 96.57%;
+    width: 29.94%;
+    justify-content: space-between;
+}
+.null{
+    @include style_itens(100%, 48.37%);
+}

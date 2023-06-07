@@ -7,6 +7,7 @@
 
     color: #FFFFFF;
     background-color: #1B1E27;
+    
     font-weight: $semi-bold;
 
     display: flex;
@@ -16,7 +17,7 @@
 
 @mixin style_calendario_estoque{
     border-radius: 20px;
-    width: 46.31%;
+    width: 46.2%; /*46.31*/
     padding: $padding-das-telas;
     background-color: $cor-das-tabelas;
 
@@ -25,14 +26,7 @@
 }
 
 .tela_home{
-    height:100vh;
-    width: 100vw;
-    padding: 1.25rem 0 1.25rem 0;
-
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-between;
+    @include tela_all;
 }
 .name{
     font-weight: 800;
@@ -134,10 +128,25 @@
 
 .estoque{
     @include style_calendario_estoque;
-    display: flex;
-//    justify-content: space-between;
+
+   justify-content: space-between;
 }
 
 .estoque_btn{
     @include primeiro; 
+}
+
+.inner_estoque{
+    height: 88%;
+    // background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.estoque_show{
+    @include primeiro;
+    width: 23.2%;
+    height: 12.2%;
+    font-weight: 600;
 }

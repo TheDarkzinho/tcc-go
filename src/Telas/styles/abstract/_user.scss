@@ -1,0 +1,72 @@
+@import "../abstract/variaveis";
+
+
+.tela_user{
+    @include tela_all;
+    display: flex;
+    flex-direction: row;
+}
+
+.name{
+    font-weight: 800;
+    margin:0 0 0 1.5rem;
+    color: #FFFFFF;
+    align-self: flex-start;
+}
+
+.conteiner_show_principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+// .container_clientes{
+//     display: flex;
+//     flex-direction: row;
+// }
+
+.chat_avisos{
+    @include style_itens(42%, 60%);
+}
+
+.rotina{
+    @include style_itens(42%, 60%);
+}
+
+.clientes{
+    @include style_itens(95%, 32%);
+}
+
+// .conteiner_show_segundo{
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.container_dados{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 8rem;
+    padding: 3rem 0 7.75rem 0;
+    // margin: 20xp 0 20px 0;
+    border-radius: 20px 0 0 20px ;
+    background-color: $cor-das-tabelas;
+
+    justify-content: space-between;
+   
+}
+
+.foto_perfil{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border-radius: 50%;
+
+}

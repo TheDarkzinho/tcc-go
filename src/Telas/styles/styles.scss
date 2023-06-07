@@ -1,6 +1,8 @@
 @import "../styles/abstract/_home.scss";
 @import "../styles/abstract/_navbar.scss";
 @import "../styles/abstract/variaveis";
+@import "../styles/abstract/user";
+@import "../styles/abstract/statics";
 
 .container{
     height: 100vh;
@@ -18,25 +20,4 @@
         text-decoration: none;
     }
     
-}  
-
-@mixin cor-e-texto($cor-fundo, $cor-letras){
-    width: 50%;
-    background-color: $cor-fundo;
-    .texto{
-        margin-top:40%;
-        text-align: center;
-        font-size: 10vmax;
-        color: $cor-letras;
-        text-decoration: none;
-        justify-content: center;      
-    }
-
-}
-
-.esquerdo{
-    @include cor-e-texto($cor-de-fundo,$cor-primaria);
-}
-.direito{
-    @include cor-e-texto($cor-das-tabelas,$cor-primaria);
 }

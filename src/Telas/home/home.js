@@ -12,15 +12,15 @@ export default function Home(){
     <div className="container">
         <div className="nav">
             <Link className="logo" to="/Inicio"><img src={log} alt="Bryst"/></Link>
-            <Link to='/Usuario'><img className="btn_no_select" src={usuario} alt="user"/></Link>
+            <Link to='/User'><img className="btn_no_select" src={usuario} alt="user"/></Link>
             <Link to='/Home'><img className="btn_select" src={home} alt="home"/></Link>
             <Link to='/Estoque'><img className="btn_no_select" src={estoque} alt="estoque"/></Link>
-            <Link to='/Statics'><img className="btn_no_select" src={statics} alt="statics"/></Link>
+            <Link to='/Statics'><img className="btn_no_select" src={statics} alt="Statics"/></Link>
             <Link to='/Calendario'><img className="btn_no_select" src={calendario} alt="calendario"/></Link>
         </div>
         <div className="tela_home"> 
             <div className="name">
-                hey Sir. Abner
+                hey Sir. Abner e Crisp
             </div>
 
             <div className="tasks">
@@ -45,7 +45,7 @@ export default function Home(){
             <div className="container_2">
                 <div className="calendario">
                     <div className="calendario_btn">
-                        calendario
+                        Calendario
                     </div>
                     <div className="inner_calendario">
                         <div className="calendario_show">dias</div>
@@ -57,9 +57,35 @@ export default function Home(){
                 </div>
 
                 <div className="estoque">
-                   <div className="estoque_btn">
-                    estoque
-                   </div>
+                    <div className="estoque_btn">
+                        Estoque
+                    </div>
+                    <div className="inner_estoque">
+                        <div className="estoque_show">Seg, 31</div>
+                        <div className="estoque_show">7:30 - 12:00</div>
+                        <div className="estoque_show">1:10 - 5:00</div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show">Ter, 1</div>
+                        <div className="estoque_show">7:00 - 11:00</div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                        <div className="estoque_show"></div>
+                    </div>
                 </div>
             </div>
         </div>
