@@ -19,7 +19,16 @@ export default function Home(){
                 <Link to='/Calendario'><img className="btn_no_select" src={calendario} alt="calendario"/></Link>
             </div>
             <div className="tela_statics">
-                <div className="dados_produtos">sim1</div>
+                <div className="container_produtos">
+                    <div className="titulo_produtos">Produtos</div>
+                    <div className="pesquisa_produtos"></div>
+                    <div className="hover_produtos">
+                        <div className="produto">oi</div>
+                        <div className="produto">oi</div>
+                        <div className="produto">oi</div>
+                        <div className="produto">oi</div>
+                    </div>
+                </div>
                 <div className="container_statics">
                     <div className="null">sim2</div>
                     <div className="null">sim3</div>
