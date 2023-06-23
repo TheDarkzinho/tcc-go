@@ -7,7 +7,15 @@
 
 .container_produtos{
     @include style_itens(62.94%,96.57%);
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-bottom: 1.6%;
+}
+
+.grid_titulo{
+    height: 10.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .titulo_produtos{
@@ -16,7 +24,7 @@
 
 .pesquisa_produtos{
     width: 100%;
-    height: 4.3%;
+    height: 1.75rem;
     border-radius: 20px;
 
     font-weight: $light;
@@ -24,10 +32,62 @@
 }
 
 .hover_produtos{
-    @include style_itens(100%,83.65%);
-    background-color: $cor-fundo-claro;
+    @include style_itens(100%,85.05%);
+    border-radius: 0;
     padding: 0;
     flex-direction: row;
+    display: flex;
+    gap: 1.25rem;
+    overflow-x:scroll;
+}
+.hover_produtos::-webkit-scrollbar{
+    height: 0.5rem;
+    border-radius: 10px;
+}
+.hover_produtos::-webkit-scrollbar-thumb{
+    background-color:$cor-primaria;
+    border-radius: 10px;
+}
+
+.produto{
+    @include style_itens(0%,100%);
+    background-color: $cor-fundo-claro;
+    padding: 0;
+    min-width: 25%;
+    align-items: center;
+    justify-content: space-around;
+    
+    img{
+        height: 180px;
+        
+        width: 160px;
+        border-radius: 20px;
+    }
+}
+
+.produto_conteudo{
+    @include titulo;
+    background-color: $cor-de-fundo;
+    width: auto;
+    padding: 0 1.5rem 0 1.5rem;   
+}
+
+// .test{
+    
+// }
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.produto_btn_alterar{
+    @include btn(#80ed99);
+}
+
+.produto_btn_excluir{
+    @include btn(#e63946);
 }
 
 .container_statics{
@@ -37,6 +97,7 @@
     width: 29.94%;
     justify-content: space-between;
 }
+
 .null{
     @include style_itens(100%, 48.37%);
 }

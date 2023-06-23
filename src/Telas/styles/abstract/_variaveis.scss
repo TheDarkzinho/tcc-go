@@ -42,3 +42,11 @@ $light:300;
     align-items: center;
     justify-content: center;
 }
+
+@mixin btn($color){
+    @include titulo;
+    background-color: $color;
+    width: auto;
+    padding: 0 0.75rem 0 0.75rem;
+    font-weight: 600;
+}

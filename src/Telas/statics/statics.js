@@ -7,6 +7,7 @@ import statics from "../../img/statics.svg"
 import estoque from "../../img/estoque.svg"
 import calendario from "../../img/calendario.svg"
 import log from "../../img/Rectangle 3 (1).svg";
+import blusa from "../../img/sim.jpeg";
 export default function Home(){
     return(
         <div className="container">
@@ -20,13 +21,31 @@ export default function Home(){
             </div>
             <div className="tela_statics">
                 <div className="container_produtos">
-                    <div className="titulo_produtos">Produtos</div>
-                    <div className="pesquisa_produtos"></div>
+                    <div className="grid_titulo">
+                        <div className="titulo_produtos">Produtos</div>
+                        <div className="pesquisa_produtos">pesquisar</div>
+                    </div>
                     <div className="hover_produtos">
+                        <div className="produto">
+                        <div className="produto_conteudo">Produto</div>
+                            <div className="produto_conteudo">Moletom nike</div>
+                            <img src={blusa} />
+                            <div className="produto_conteudo">150.00</div>
+                            <div className="produto_conteudo">75.00</div>
+                            <div className="produto_conteudo">1000.00</div>
+                            <div className="produto_conteudo">P , M , G </div>
+                            <div className="produto_conteudo">27</div>
+                            <div className="btns">
+                                <div className="produto_btn_alterar">alterar</div>
+                                <div className="produto_btn_excluir">excluir</div>
+                            </div>
+                            
+                        </div>
                         <div className="produto">oi</div>
                         <div className="produto">oi</div>
                         <div className="produto">oi</div>
                         <div className="produto">oi</div>
+
                     </div>
                 </div>
                 <div className="container_statics">

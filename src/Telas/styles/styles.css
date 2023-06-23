@@ -175,7 +175,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  min-width: 3.75rem;
+  min-width: 4.5%;
   padding: 3rem 0 7.75rem 0;
   border-radius: 0 20px 20px 0;
   background-color: #111215;
@@ -260,20 +260,55 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 8rem;
+  width: 200px;
   padding: 3rem 0 7.75rem 0;
   border-radius: 20px 0 0 20px;
   background-color: #111215;
-  justify-content: space-between;
+  transition: 0.5s;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container_dados.expandir {
+  width: 500px;
+  transition: 0.5s;
+}
+
+.container_dados p {
+  color: white;
 }
 
 .foto_perfil {
-  width: 100%;
-  height: 30%;
   display: flex;
   flex-direction: column;
-  background-color: red;
-  border-radius: 50%;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  background-color: #141519;
+  border-radius: 75px;
+}
+
+.foto_perfil .img {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 70%;
+}
+
+.botao_push {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.botao_push > img {
+  font-size: 40px;
+  cursor: pointer;
 }
 
 .tela_statics {
@@ -296,7 +331,15 @@
   background-color: #111215;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-bottom: 1.6%;
+}
+
+.grid_titulo {
+  height: 10.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .titulo_produtos {
@@ -313,7 +356,7 @@
 
 .pesquisa_produtos {
   width: 100%;
-  height: 4.3%;
+  height: 1.75rem;
   border-radius: 20px;
   font-weight: 300;
   background-color: #1B1E27;
@@ -321,15 +364,101 @@
 
 .hover_produtos {
   border-radius: 20px;
-  height: 83.65%;
+  height: 85.05%;
   width: 100%;
+  padding: 1.18% 1.18% 0.79% 1.18%;
+  background-color: #111215;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  padding: 0;
+  flex-direction: row;
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: scroll;
+}
+
+.hover_produtos::-webkit-scrollbar {
+  height: 0.5rem;
+  border-radius: 10px;
+}
+
+.hover_produtos::-webkit-scrollbar-thumb {
+  background-color: #4A62BD;
+  border-radius: 10px;
+}
+
+.produto {
+  border-radius: 20px;
+  height: 100%;
+  width: 0%;
   padding: 1.18% 1.18% 0.79% 1.18%;
   background-color: #111215;
   display: flex;
   flex-direction: column;
   background-color: #1B1E27;
   padding: 0;
-  flex-direction: row;
+  min-width: 25%;
+  align-items: center;
+  justify-content: space-around;
+}
+.produto img {
+  height: 180px;
+  width: 160px;
+  border-radius: 20px;
+}
+
+.produto_conteudo {
+  height: 1.75rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  color: #FFFFFF;
+  background-color: #1B1E27;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #17181C;
+  width: auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.produto_btn_alterar {
+  height: 1.75rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  color: #FFFFFF;
+  background-color: #1B1E27;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #80ed99;
+  width: auto;
+  padding: 0 0.75rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.produto_btn_excluir {
+  height: 1.75rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  color: #FFFFFF;
+  background-color: #1B1E27;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e63946;
+  width: auto;
+  padding: 0 0.75rem 0 0.75rem;
+  font-weight: 600;
 }
 
 .container_statics {

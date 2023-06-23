@@ -7,7 +7,21 @@ import statics from "../../img/statics.svg"
 import estoque from "../../img/estoque.svg"
 import calendario from "../../img/calendario.svg"
 import log from "../../img/Rectangle 3 (1).svg";
+import setaL from "../../img/setaL.svg"
+
+
 export default function User(){
+
+    function exp() {
+        // const[user, setUser] = useState("")
+        // const[password, setPassoword] = useState("")
+        const btnPush = document.getElementById("btn-push")
+        const menuSide = document.getElementById("container_dados")
+
+        btnPush.addEventListener('click', function(){
+            menuSide.setAttribute("className","container_dados.expandir")
+    })}
+
     return(
     <div className="container">
         <div className="nav">
@@ -35,12 +49,16 @@ export default function User(){
     
        
 
-            <div className="container_dados">
+            <div className="container_dados" id="container_dados">
                 <div className="foto_perfil">
-                    <img src={usuario} alt="foto perf" />
+                    <div className="img">
+                    <img src={usuario} alt="foto perf" /> 
+                    </div>
                 </div>
+                <p>O tal do Marcos Crisp????</p>
+                
                 <div className="botao_push">
-                    
+                    <img src={setaL} id="btn-Push" alt="seta esquerda" onClick={exp} /> 
                 </div>
             </div>
 
