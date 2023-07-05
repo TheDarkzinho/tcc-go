@@ -28,7 +28,7 @@ export default function Home(){
                     <div className="hover_produtos">
                         <div className="produto">
                         <div className="produto_conteudo">Produto</div>
-                            <div className="produto_conteudo">Moletom nike</div>
+                            <div className="produto_conteudo">Moletom nike </div>
                             <img src={blusa} />
                             <div className="produto_conteudo">150.00</div>
                             <div className="produto_conteudo">75.00</div>

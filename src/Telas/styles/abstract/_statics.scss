@@ -68,8 +68,15 @@
 .produto_conteudo{
     @include titulo;
     background-color: $cor-de-fundo;
-    width: auto;
-    padding: 0 1.5rem 0 1.5rem;   
+    width: 75%;
+    padding: 0 1.5rem 0 1.5rem;
+    // Tipo{
+    //     background-color: $cor-de-fundo;
+    //     padding: none;
+    //     font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    //     background-color: $cor-fundo-claro;
+    //     padding: 5px 10px; /* Ajuste o espaçamento do texto conforme necessário */
+    // }   
 }
 
 // .test{

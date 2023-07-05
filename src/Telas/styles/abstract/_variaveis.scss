@@ -46,7 +46,7 @@ $light:300;
 @mixin btn($color){
     @include titulo;
     background-color: $color;
-    width: auto;
+    width: 40%;
     padding: 0 0.75rem 0 0.75rem;
     font-weight: 600;
 }
